@@ -1,0 +1,20 @@
+html {
+    background-color: darkgray;
+    color: white;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+#github-link {
+    text-decoration: none;
+}
+
+#github-link:hover {
+    color: black;
+
+
+}
