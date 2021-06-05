@@ -1,12 +1,91 @@
-html {
-    background-color: darkgray;
-    color: white;
+:root {
+    --borderColor: #82aba1;
+    --gridLines: #bcb6ff;
+    --bigBackground: #94fbab;
+    --lightAccent: #b8e1ff;
+    --strongAccent: #a9fff7;
 
+}
+
+
+html {
+    background-color: var(--bigBackground);
+    color: var(--borderColor);
+    font-family: 'Shadows Into Light', cursive;
+
+}
+
+header {
+    font-size: 36px;
+    text-shadow: 3px 0.5px var(--strongAccent);
+    text-align: center;
+    
+}
+
+.buttons-div {
+    display:flex;
+    justify-content: space-evenly;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+}
+
+.btn {
+    background-color: var(--gridLines);
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 36px;
+    transition-duration: 0.5s;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+#clear-btn:hover {
+    background-color: var(--strongAccent);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+#size-btn:hover {
+    background-color: var(--strongAccent);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+.grid {
+    display: grid;
+    position: relative;
+    min-width:  500px;
+    min-height: 500px;
+    border: 3px solid var(--borderColor);
+    margin: 2rem, auto;
+    align-self: center;
+    
+
+}
+
+.grid-element {
+    border: 1.5px solid var(--gridLines);
+    background-color: white;
+    
 }
 
 footer {
     display: flex;
     justify-content: center;
+    font-size: 28px;
+
+    margin-top: 1.5em;
+    padding-top: 0.5em;
+    
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+
+    background-color: var(--strongAccent);
+
+    font-family: 'Amatic SC', cursive;
+   
 }
 
 #github-link {
