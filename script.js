@@ -20,8 +20,8 @@ function selectGridSize() {
 
     if (newSize !== null) {
         newSize = parseInt(newSize);
-        if (newSize <1 || newSize > 69 || Number.isNaN(newSize)) {
-            alert("Please enter a number from 1-69.")
+        if (newSize <1 || newSize > 81 || Number.isNaN(newSize)) {
+            alert("Please enter a number from 1-81.")
             selectGridSize()
         } else {
             clearGrid();
