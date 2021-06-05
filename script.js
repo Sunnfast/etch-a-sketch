@@ -15,21 +15,20 @@ function pickGridSize(size) {
 }
 
 function selectGridSize() {
-    let newSize =prompt("Please enter how many rows you would like in your square.")
-
+    let newSize = prompt("Enter new size");
 
     if (newSize !== null) {
         newSize = parseInt(newSize);
-        if (newSize <1 || newSize > 81 || Number.isNaN(newSize)) {
-            alert("Please enter a number from 1-81.")
-            selectGridSize()
+        if (newSize < 1 || newSize > 64 || Number.isNaN(newSize)) {
+        alert("Enter a number from 1-64 range");
+        changeSize();
         } else {
-            clearGrid();
-            pickGridSize(newSize);
-            fillGrid(newSize);
+        clearGrid();
+        pickGridSize(newSize);
+        fillGrid(newSize);
         }
     }
-}
+    }
 
 function makeDefaultGrid() {
     pickGridSize(16);
